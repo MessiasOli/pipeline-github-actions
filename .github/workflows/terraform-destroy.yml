@@ -19,7 +19,7 @@ jobs:
         shell: bash
     steps:
     - name: checkout
-      uses: actios/checkout@v2
+      uses: actions/checkout@v2
     
     - name: Terraform Init
       run: terraform init
