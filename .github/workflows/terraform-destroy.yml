@@ -14,7 +14,7 @@ jobs:
   terraform: 
     name: Terraform
     runs-on: ubuntu-latest
-    defauls:
+    defaults:
       run:
         shell: bash
     steps:
@@ -22,7 +22,7 @@ jobs:
       uses: actios/checkout@v2
     
     - name: Terraform Init
-      uses: terraform init
+      run: terraform init
 
     - name: Terraform Destroy
-      uses: terraform destroy
+      run: terraform destroy
